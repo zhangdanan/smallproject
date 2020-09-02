@@ -2,7 +2,7 @@
 
 ### 1.看下我的目录结构
 
-![image-20200902165459982](C:\Users\m1885\AppData\Roaming\Typora\typora-user-images\image-20200902165459982.png)
+![image-20200902165459982](https://github.com/zhangdanan/smallproject/blob/master/images/01.png)
 
 ### 2.新建数据库
 
