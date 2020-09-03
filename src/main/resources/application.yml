@@ -9,3 +9,15 @@ spring:
 mybatis:
   type-aliases-package: sloth.zhang.test.domain
   mapper-locations: classpath:/mapper/*.xml
+
+
+session:
+  store-type: redis
+  timeout: 30
+
+redis:
+  database: localhost
+  host:localhost
+  password:
+  port: 6379
+  timeout: 300000

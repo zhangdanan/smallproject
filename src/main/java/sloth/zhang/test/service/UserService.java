@@ -3,8 +3,6 @@ package sloth.zhang.test.service;
 import sloth.zhang.test.domain.User;
 import sloth.zhang.test.dto.ServiceResult;
 
-import java.util.List;
-
 /**
  * @author Yoga zhang
  * @Type UserService.java
@@ -17,11 +15,15 @@ public interface UserService {
 
     ServiceResult selectById(Integer id);
 
+    ServiceResult selectByName(String name);
+
     ServiceResult delete(Integer id);
 
     ServiceResult update(User user);
 
     ServiceResult insert(User user);
+
+    ServiceResult<Object> login(String name, String password);
 
 
 

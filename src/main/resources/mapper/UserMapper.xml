@@ -24,6 +24,16 @@
         where id=#{id}
     </select>
 
+    <select id="selectByName" resultType="sloth.zhang.test.domain.User">
+       select id,name,password,email,aihao
+        from test
+        where name=#{name}
+    </select>
+
+    <select id="login" resultType="sloth.zhang.test.domain.User">
+        select id,name,password from test where name=#{name} and password=#{password}
+    </select>
+
 
     <insert id="insert">
         insert into test(name,password,email,aihao) values (#{name},#{password},#{email},#{aihao})
@@ -36,5 +46,7 @@
     <update id="update">
         update test set name=#{name},password=#{password},email=#{email},aihao=#{aihao}  where id=#{id}
     </update>
+
+
 
 </mapper>

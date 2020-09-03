@@ -17,10 +17,14 @@ public interface UserDao {
 
     User selectById(Integer id);
 
+    User selectByName(String name);
+
     Integer delete(Integer id);
 
     Integer update(User user);
 
     Integer insert(User user);
+
+    User login(String name, String password);
 
 }
